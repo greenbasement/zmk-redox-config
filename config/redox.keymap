@@ -10,7 +10,10 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&mt { flavor = "tap-preferred"; };
+&mt {
+    flavor = "tap-preferred";
+    require-prior-idle-ms = <125>;
+};
 
 / {
     keymap {
