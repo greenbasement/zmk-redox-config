@@ -31,7 +31,7 @@
             bindings = <
 &kp ESC               &kp N1          &kp N2          &kp N3           &kp N4            &kp N5                                                     &kp N6   &kp N7             &kp N8       &kp N9           &kp N0              &tog 1
 &kp TAB               &kp Q           &kp W           &kp E            &kp R             &kp T    &to 0                                  &tog 2     &kp Y    &kp U              &kp I        &kp O            &kp P               &kp MINUS
-&mo 1                 &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D      &mt LEFT_SHIFT F  &lt 1 G  &mo 1                                  &mo 1      &lt 1 H  &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &kp SQT
+&mo 1                 &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D      &mt LEFT_SHIFT F  &lt 1 G  &mo 1                                  &tog 1     &lt 1 H  &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &kp SQT
 &kp LC(LS(LEFT_ALT))  &kp Z           &kp X           &kp C            &kp V             &kp B    &kp PG_UP      &kp PG_DN    &kp HOME   &kp END    &kp N    &kp M              &kp COMMA    &kp DOT          &kp FSLH            &kp RC(RS(RIGHT_ALT))
 &kp PRINTSCREEN       &kp LEFT_WIN    &kp C_VOL_DN    &kp C_VOLUME_UP  &kp LCTRL                  &kp BACKSPACE  &kp DEL      &kp ENTER  &kp SPACE           &lt 2 LS(F10)      &kp LEFT     &kp DOWN         &kp UP              &kp RIGHT
             >;
@@ -48,7 +48,7 @@
             bindings = <
 &kp ESCAPE  &kp F1       &kp F2      &kp F3                &kp F4                 &kp F5                                                     &kp F6           &kp F7        &kp F8          &kp F9      &kp F10       &kp F11
 &kp TAB     &kp EXCL     &kp AT      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE   &to 0                                &tog 2     &kp DOLLAR       &kp N7        &kp N8          &kp N9      &kp KP_MINUS  &kp F12
-&mo 1       &kp HASH     &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp APOS   &trans                               &kp COLON  &kp KP_MULTIPLY  &kp N4        &kp N5          &kp N6      &kp KP_PLUS   &kp COLON
+&mo 1       &kp HASH     &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp APOS   &trans                               &tog 1     &kp KP_MULTIPLY  &kp N4        &kp N5          &kp N6      &kp KP_PLUS   &kp COLON
 &trans      &kp PERCENT  &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE  &trans         &trans     &trans     &trans     &kp KP_DIVIDE    &kp N1        &kp N2          &kp N3      &kp EQUAL     &kp PERIOD
 &trans      &trans       &trans      &trans                &trans                            &kp BACKSPACE  &kp DEL    &kp ENTER  &kp SPACE                   &kp NUMBER_0  &kp LEFT_ARROW  &kp PERIOD  &kp ENTER     &kp RIGHT_ARROW
             >;
@@ -63,11 +63,11 @@
             // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | SPACE   | --- | DEL  | SPACE |    RAISE    | LEFT | DOWN | UP    | RIGHT |
 
             bindings = <
-&trans   &trans     &trans          &trans          &trans           &trans                                                        &trans     &trans          &trans        &trans     &trans     &trans
-&kp ESC  &kp EXCL   &kp AT          &mmv MOVE_UP    &kp DLLR         &msc SCRL_UP    &to 0                              &tog 2     &kp CARET  &kp AMPS        &kp UP_ARROW  &kp LPAR   &kp RPAR   &kp DEL
-&tog 1   &kp UNDER  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans                             &trans     &kp HOME   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp GRAVE  &kp TILDE
-&trans   &kp ESC    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp TILDE       &trans     &trans       &trans     &trans     &kp END    &kp PG_DN       &kp LEFT      &kp DOWN   &kp RIGHT  &kp RET
-&to 3    &trans     &trans          &mo 3           &trans                           &mkp LCLK  &mkp RCLK    &kp ENTER  &kp SPACE             &kp RCTRL       &trans        &trans     &trans     &trans
+&trans   &trans     &trans          &trans          &trans           &trans                                                &trans     &trans          &trans        &trans     &trans     &trans
+&kp ESC  &kp EXCL   &kp AT          &mmv MOVE_UP    &kp DLLR         &msc SCRL_UP  &to 0                        &tog 2     &kp CARET  &kp AMPS        &kp UP_ARROW  &kp LPAR   &kp RPAR   &kp DEL
+&tog 1   &kp UNDER  &trans          &trans          &trans           &trans        &trans                       &trans     &kp HOME   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp GRAVE  &kp TILDE
+&trans   &kp ESC    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp TILDE     &trans  &trans    &trans     &trans     &kp END    &kp PG_DN       &kp LEFT      &kp DOWN   &kp RIGHT  &kp RET
+&to 3    &trans     &trans          &mo 3           &trans                         &trans  &trans    &kp ENTER  &kp SPACE             &kp RCTRL       &trans        &trans     &trans     &trans
             >;
         };
 
